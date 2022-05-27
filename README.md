@@ -10,7 +10,7 @@ Simple startpage
 
 # General info
 
-This startpage with parallax background. It's written in plain `HTML / CSS / JS`, so you can copy it without any preparations and building. Inspired by [this startpage](https://github.com/zombieFox/voltTab). 
+This is a startpage with parallax background. It's written in plain `HTML / CSS / JS`, so you can copy it without any preparations and building. Inspired by [this startpage](https://github.com/zombieFox/voltTab). 
 
 # Preview
 

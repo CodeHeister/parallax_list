@@ -35,7 +35,7 @@ body, html {
     display: flex;
     background-image: url(../img/alto.png);
     background-repeat: no-repeat;
-    background-size: 110%;
+    background-size: auto 110%;
     background-position: 50% 50%;
     background-color: var(--bg-primary);
     /*overflow: hidden;*/
@@ -225,12 +225,41 @@ body, html {
         display: none !important;
     }
 
-    .bg {
-        background-size: 210vh;
-    }
-
     #list, #icons {
         padding: 2rem 1.5rem 2rem 1.5rem;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+    
+    .title_active {
+        font-size: 1.25rem;
+    }
+
+    .description {
+        font-size: 0.5rem;
+        font-style: italic;
+    }
+    
+    .description_active {
+        font-size: 0.55rem
+    }
+
+    .icon_active_b { /* indirect list */
+        transform: scale(1);
+    }
+    
+    .icon_active_s { /* direct list */
+        transform: scale(0.8);
+    }
+    
+    .large_icon { /* direct icon */
+        transform: scale(1.1) !important;
+    }
+
+    .icon_list {
+        gap: 1.5rem;
     }
 }
 
