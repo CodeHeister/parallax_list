@@ -1,0 +1,63 @@
+/*
+ * +-------------------+
+ * | :: C U R S O R :: |
+ * +-------------------+
+ */
+
+:root {
+	--cursor-speed: 0.1s;
+}
+
+.cursor {
+	position: absolute;
+	z-index: 99;
+	transition: all 0.05s ease;
+	opacity: 0;
+}
+
+.cursor-icon {
+	background-color: rgba(132, 132, 132, 0.9);
+	border-radius: 2em;
+	transform-origin: 50% 50%;
+	transition: transform var(--cursor-speed) ease-out, background-color var(--cursor-speed) ease-in, width var(--cursor-speed) cubic-bezier(0.35, 0.35, 1, 1), height var(--cursor-speed) cubic-bezier(0.35, 0.35, 1, 1);
+	transform: translate(-50%, -50%);
+	z-index: 100;
+	box-shadow: -0.2rem 0.2rem 5rem 0.05rem #0a0a0a;
+}
+
+.cursor-icon, .cursor {
+	width: 1rem;
+	height: 1rem;
+	pointer-events: none;
+}
+
+.cursor-hidden {
+}
+
+.cursor-visible {
+	opacity: 1;
+}
+
+.focused {
+	background-color: rgba(132, 132, 132, 0.4);
+}
+
+* { 
+	cursor: none; 
+}
+ 
+@media (pointer: none), (pointer: coarse) {
+    .cursor, .cursor-icon {
+		display: none !important; 
+		visibility: hidden; 
+		opacity: 0; 
+	}
+ 
+    * { 
+		cursor: auto !important; 
+	}
+}
+
+.olist, .ilist_icon, .ilist_title{
+	cursor: none;
+}
