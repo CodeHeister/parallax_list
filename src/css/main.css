@@ -230,7 +230,7 @@ body, html {
 +----------------------------------------------+
 */
 
-@media (orientation: portrait) {
+@media (orientation: portrait), (max-width: 1000px) {
     .ilist_icon {
         display: none !important;
     }
@@ -244,7 +244,7 @@ body, html {
     }
     
     .title_active {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
 
     .description {
@@ -253,7 +253,7 @@ body, html {
     }
     
     .description_active {
-        font-size: 0.55rem
+        font-size: 0.52rem
     }
 
     .icon_active_b { /* indirect list */
